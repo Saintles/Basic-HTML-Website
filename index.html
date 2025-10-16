@@ -33,7 +33,8 @@
             gap: 10px;
             flex-direction: row;
         }
-        li {
+        nav>ul>li,
+        .projects-list {
             list-style: none;
         }
         nav> ul li:not(:last-child)::after {
@@ -79,7 +80,7 @@
         <p>html only with proper layout, no styling</p>
         <section id="projects">
             <h1 class="delicious-handrawn delicious-lg">Projects</h1>
-            <ul>
+            <ul class="projects-list">
                 <li>HTML Only Portfolio</li>
                 <li>Calculator</li>
                 <li>Quiz App</li>
