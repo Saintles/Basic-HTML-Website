@@ -72,6 +72,16 @@
         h1{
           margin: 0;  
         }
+        .projects-list{
+            flex-direction: column;
+            margin-top: 20px;
+            padding: 0;
+        }
+        .wrapper-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            justify-items: center;
+        }
     </style>
 </head>
 <body>
@@ -92,43 +102,48 @@
     <main>
         <section id="hero-section" class="hero-section">
             <h1 class="delicious-handrawn delicious-2xl">Frontend Developer</h1>
-            <p>html only with proper layout, no styling</p>
+            <p style = "color:#808080">html only with proper layout, no styling</p>
         </section>
-        <section id="projects">
-            <h1 class="delicious-handrawn delicious-lg">Projects</h1>
-            <ul class="projects-list">
-                <li>HTML Only Portfolio</li>
-                <li>Calculator</li>
-                <li>Quiz App</li>
-                <li>Countdown Timer</li>
-                <li>Product Upcoming Page</li>
-            </ul>
-        </section>
-        <section id="work-experience">
-            <h1 class="delicious-handrawn delicious-lg">Work Experience</h1>
-            <p class="delicious-handrawn delicious-2md">roadmap.sh</p>
-            <p>Solved all the Frontend projects</p>
-            <a href="https://roadmap.sh/account">Visit my Profile</a>
-        </section>
-        <section id="open-source-work">
-            <h1 class="delicious-handrawn delicious-lg">Open Source Work</h1>
-            <p>Coming soon</p>
-            <a href="https://github.com/Saintles">Visit my GitHub</a>
-        </section>
-        <section id="education">
-            <h1 class="delicious-handrawn delicious-lg">Education</h1>
-            <p>Information Technologies, Mechanics and Optics University(ITMO University), St.Petersburg - Postgraduate education</p>
-            <p>Courses I took:</p>
-            <ul>
-                <li>Introduction to Front-End Development</li>
-                <li>Create High-Fidelity Designs and Prototypes in Figma</li>
-                <li>Conduct UX Research and Test Early Concepts</li>
-                <li>Build Wireframes and Low-Fidelity Prototypes</li>
-                <li>Start the UX Design Process: Empathize, Define, and Ideates</li>
-                <li>Foundations of User Experience (UX) Design</li>
-                <li>Introduction to Software Engineering</li>
-            </ul>
-        </section>
+        <div class="wrapper-container">
+            <section id="projects" class="projects">
+                <h1 class="delicious-handrawn delicious-lg">Projects</h1>
+                <ul class="projects-list">
+                    <li>HTML Only Portfolio</li>
+                    <li>Calculator</li>
+                    <li>Quiz App</li>
+                    <li>Countdown Timer</li>
+                    <li>Product Upcoming Page</li>
+                </ul>
+            </section>
+            <div class="work-experience_wrapper">
+                <section id="work-experience">
+                    <h1 class="delicious-handrawn delicious-lg">Work Experience</h1>
+                    <p class="delicious-handrawn delicious-2md">roadmap.sh</p>
+                    <p>Solved all the Frontend projects</p>
+                    <a href="https://roadmap.sh/account">Visit my Profile</a>
+                </section>
+                <section id="open-source-work">
+                    <h1 class="delicious-handrawn delicious-lg">Open Source Work</h1>
+                    <p>Coming soon</p>
+                    <a href="https://github.com/Saintles">Visit my GitHub</a>
+                </section>
+            </div>
+            <section id="education">
+                <h1 class="delicious-handrawn delicious-lg">Education</h1>
+                <p>Information Technologies, Mechanics and Optics University(ITMO University), St.Petersburg - Postgraduate education</p>
+                <p>Courses I took:</p>
+                <ul>
+                    <li>Introduction to Front-End Development</li>
+                    <li>Create High-Fidelity Designs and Prototypes in Figma</li>
+                    <li>Conduct UX Research and Test Early Concepts</li>
+                    <li>Build Wireframes and Low-Fidelity Prototypes</li>
+                    <li>Start the UX Design Process: Empathize, Define, and Ideates</li>
+                    <li>Foundations of User Experience (UX) Design</li>
+                    <li>Introduction to Software Engineering</li>
+                </ul>
+            </section>
+            </div>
+        </div>
         <section id="reviews-from-my-teacher">
             <h1 class="delicious-handrawn delicious-lg">Reviews from my teacher</h1>
             <ul class="reviews-list">
