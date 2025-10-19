@@ -30,6 +30,9 @@
             justify-content: space-between; 
             align-items: center; 
             padding: 20px;
+            border: 2px solid black;
+            margin-left: 40px;
+            margin-right: 40px;
         }
         ul{
             display: flex;
@@ -67,20 +70,77 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            gap: 0;
+            border: 2px solid black;
+            margin-left: 40px;
+            margin-right: 40px;
         }
-        h1{
-          margin: 0;  
+        h2{
+          margin: 0;
+          margin-top: 20px; 
+        }
+        .projects{
+            justify-self: start;
+            border-right: 2px solid #000;
+            padding-right: 100px;
+        }
+        .projects > h2{
+            padding-left: 40px;
         }
         .projects-list{
             flex-direction: column;
             margin-top: 20px;
-            padding: 0;
+        }
+        .projects-list li{
+            padding-left: 40px;
+            padding: 0; 
+            border-bottom: 1px solid black;
+            padding-bottom: 5px;
+            margin-bottom: 5px;
         }
         .wrapper-container{
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 100px;
             justify-items: center;
+            border: 2px solid #000;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        .work-experience_wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-right: 140px;
+            gap: 60px;
+        }
+        .education{
+            display: flex;
+            flex-direction: column;
+            border-left: 2px solid #000;
+            padding-left: 40px;
+        }
+        .education-list{
+            flex-direction: column;
+            list-style-type: none;
+        }
+        .education-list li::before{
+            content: "-";
+            margin-right: 10px;
+        }
+        .open-source-work{
+            border-top: 2px solid #000;
+        }
+        .reviews-from-my-teacher{
+            border: 2px solid #000;
+            margin-left: 40px;
+            margin-right: 40px;
+            padding-top: 40px;
+        }
+        .reviews-from-my-teacher h2{
+            padding-left: 40px;
+        }
+        .reviews-list li{
+            list-style-type: none;
         }
     </style>
 </head>
@@ -106,7 +166,7 @@
         </section>
         <div class="wrapper-container">
             <section id="projects" class="projects">
-                <h1 class="delicious-handrawn delicious-lg">Projects</h1>
+                <h2 class="delicious-handrawn delicious-lg">Projects</h2>
                 <ul class="projects-list">
                     <li>HTML Only Portfolio</li>
                     <li>Calculator</li>
@@ -117,22 +177,22 @@
             </section>
             <div class="work-experience_wrapper">
                 <section id="work-experience">
-                    <h1 class="delicious-handrawn delicious-lg">Work Experience</h1>
+                    <h2 class="delicious-handrawn delicious-lg">Work Experience</h2>
                     <p class="delicious-handrawn delicious-2md">roadmap.sh</p>
                     <p>Solved all the Frontend projects</p>
                     <a href="https://roadmap.sh/account">Visit my Profile</a>
                 </section>
-                <section id="open-source-work">
-                    <h1 class="delicious-handrawn delicious-lg">Open Source Work</h1>
+                <section id="open-source-work" class="open-source-work">
+                    <h2 class="delicious-handrawn delicious-lg">Open Source Work</h2>
                     <p>Coming soon</p>
                     <a href="https://github.com/Saintles">Visit my GitHub</a>
                 </section>
             </div>
-            <section id="education">
-                <h1 class="delicious-handrawn delicious-lg">Education</h1>
+            <section id="education" class="education">
+                <h2 class="delicious-handrawn delicious-lg">Education</h2>
                 <p>Information Technologies, Mechanics and Optics University(ITMO University), St.Petersburg - Postgraduate education</p>
                 <p>Courses I took:</p>
-                <ul>
+                <ul class="education-list">
                     <li>Introduction to Front-End Development</li>
                     <li>Create High-Fidelity Designs and Prototypes in Figma</li>
                     <li>Conduct UX Research and Test Early Concepts</li>
@@ -144,8 +204,8 @@
             </section>
             </div>
         </div>
-        <section id="reviews-from-my-teacher">
-            <h1 class="delicious-handrawn delicious-lg">Reviews from my teacher</h1>
+        <section id="reviews-from-my-teacher" class="reviews-from-my-teacher">
+            <h2 class="delicious-handrawn delicious-lg">Reviews from my teacher</h2>
             <ul class="reviews-list">
                 <li>
                     <p>Very responsible and talented student. Always does more than expected and has a great sense of style.</p>
